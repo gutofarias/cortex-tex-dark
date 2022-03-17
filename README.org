@@ -1,6 +1,6 @@
-#+TITLE: Cortex Theme
+#+TITLE: Cortex-Tex-Dark Theme
 
-Theme for my braindump. Currently largely copied from [[https://github.com/azlen/azlen.me/][azlen.me]].
+Theme for my braindump. Currently largely copied from [[https://github.com/jethrokuan/cortex][Cortex Theme]] and [[https://github.com/HelloRusk/HugoTeX][HugoTex Theme]].
 
 ** Search
 
