@@ -1,0 +1,7 @@
+#+TITLE: Cortex-Tex-Dark Theme
+
+Theme for my braindump. Currently largely copied from [[https://github.com/jethrokuan/cortex][Cortex Theme]] and [[https://github.com/HelloRusk/HugoTeX][HugoTex Theme]].
+
+** Search
+
+In order for search to work, you must have a `/content/search/_index.md` file, so that `/search` is a valid url.
