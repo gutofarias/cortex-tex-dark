@@ -1,38 +1,16 @@
 @import url("https://rsms.me/inter/inter.css");
 
-
-:root {
-    /* --primary: rgba(127, 255, 212, 0.6); */
-    --primary: burlywood;
-    --header: darksalmon;
-
-  /* --fg: #eee; */
-  --fg: beige;
-  --bg: #303030;
-  --header-bg: #22272e;
-  --page-bg: #22272e;
-  --grid-bg: #1c2128;
-  --code-bg: #2e2a31;
-  --border-color: #333;
-  --link-color: var(--primary);
-  --backlink-color: rgba(127, 255, 212, 0.6);
-  --active-link-background-color: #444;
-  --shadow-color: rgba(0, 0, 0, 0.2);}
-
-
-
 html,
 body {
   font-family: "Inter", sans-serif;
   display: flex;
   flex-flow: column;
-  background: var(--bg);
+  background: #fafafc;
   line-height: 1.4;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  color: var(--fg);
 }
 
 @supports (font-variation-settings: normal) {
@@ -47,8 +25,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
-  color: var(--header);
+  font-weight: bold;
 }
 
 h1 {
@@ -65,38 +42,15 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 h3 {
-  font-size: 1.2em;
-  font-weight: 400;
+  font-size: 1.3em;
 }
 
 h4 {
-  font-size: 1.2em;
-  font-weight: 400;
-}
-
-p {
-  font-size: 1.2em;
-  font-weight: 400;
-}
-
-/* h1:before, */
-h2:before {
-  content: '■ ';
-    position: relative;
-    bottom: .1em;
-    color: #666;
-}
-
-
-h3:before {
-  content: '▶ ';
-    position: relative;
-    bottom: .1em;
-    color: #666;
+  font-size: 1.1em;
 }
 
 p {
@@ -106,7 +60,7 @@ p {
 header {
   display: flex;
   align-items: center;
-  background: var(-header--bg);
+  background: #fff;
   border-bottom: 1px #ccc solid;
   padding: 2px;
 }
@@ -141,11 +95,11 @@ header {
 
 .page {
   white-space: normal;
-  background: var(--bg);
+  background: #ffffff;
   border-left: 1px solid rgba(0, 0, 0, 0.05);
   display: inline-block;
   width: 100%;
-  max-width: 700px;
+  max-width: 625px;
   height: 100% !important;
   max-height: 100%;
   overflow-y: auto;
@@ -161,19 +115,18 @@ header {
   margin-right: 15px;
 }
 
-
 .content {
-  padding: 50px;
+  padding: 32px;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
-  color: var(--link-color);
+  color: rgba(10, 132, 255, 1);
 }
 
 a.active {
-    background-color: rgba(10, 132, 255, 0.15);
+  background-color: rgba(10, 132, 255, 0.15);
 }
 
 a:hover {
@@ -214,7 +167,6 @@ iframe {
   overflow: hidden;
   overflow-y: hidden;
   border: none;
-
 }
 
 .tippy-box > .tippy-arrow:before {
@@ -245,7 +197,7 @@ iframe {
 
 .backlinks a {
   flex: 100%;
-  color: var(--backlink-color);
+  color: rgba(10, 132, 255, 0.75);
 }
 
 dl {
@@ -329,253 +281,4 @@ dt + dt + dd {
   .search-extract {
     display: none;
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@font-face {
-  font-family: 'Latin Modern';
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-  src: url('./fonts/LM-regular.woff2') format('woff2'),
-    url('./fonts/LM-regular.woff') format('woff'),
-    url('./fonts/LM-regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Latin Modern';
-  font-style: italic;
-  font-weight: normal;
-  font-display: swap;
-  src: url('./fonts/LM-italic.woff2') format('woff2'),
-    url('./fonts/LM-italic.woff') format('woff'),
-    url('./fonts/LM-italic.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Latin Modern';
-  font-style: normal;
-  font-weight: bold;
-  font-display: swap;
-  src: url('./fonts/LM-bold.woff2') format('woff2'),
-    url('./fonts/LM-bold.woff') format('woff'),
-    url('./fonts/LM-bold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Latin Modern';
-  font-style: italic;
-  font-weight: bold;
-  font-display: swap;
-  src: url('./fonts/LM-bold-italic.woff2') format('woff2'),
-    url('./fonts/LM-bold-italic.woff') format('woff'),
-    url('./fonts/LM-bold-italic.ttf') format('truetype');
-}
-
-
-
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-
-
-/* Add smooth scrolling to anchors */
-html {
-  scroll-behavior: smooth;
-}
-
-body.libertinus {
-  font-family: 'Libertinus', Georgia, Cambria, 'Times New Roman', Times, serif;
-}
-
-body {
-  font-family: 'Latin Modern', Georgia, Cambria, 'Times New Roman', Times, serif;
-  line-height: 1.8;
-  /* line-height: 1.5; */
-
-  /* max-width: 90ch; */
-  /* min-height: 100vh; */
-  overflow-x: hidden;
-  margin: 0 auto;
-  padding: 2rem 1.25rem;
-
-  counter-reset: theorem;
-  counter-reset: definition;
-  counter-reset: sidenote-counter;
-
-  /* color: hsl(0, 5%, 10%); */
-  /* background-color: hsl(210, 20%, 98%); */
-
-  text-rendering: optimizeLegibility;
-}
-
-
-/* Justify and hyphenate all paragraphs */
-p {  
-  text-align: justify;
-  hyphens: auto;
-  margin-top: 1rem;
-}
-
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-
-/* Make images easier to work with */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-
-/* Prevent textarea from overflowing */
-textarea {
-  width: 100%;
-}
-
-
-
-/* Natural flow and rhythm in articles by default */
-article > * + * {
-  margin-top: 1em;
-}
-
-/* Styles for inline code or code snippets */
-code,
-pre,
-kbd {
-  font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
-    monospace;
-  font-size: 85%;
-}
-
-
-
-pre {
-  padding: 1rem 1.4rem;
-  max-width: 100%;
-  overflow: auto;
-  border-radius: 4px;
-  background: hsl(210, 28%, 93%);
-}
-pre code {
-  font-size: 95%;
-  position: relative;
-}
-kbd {
-  background: hsl(210, 5%, 100%);
-  border: 1px solid hsl(210, 5%, 70%);
-  border-radius: 2px;
-  padding: 2px 4px;
-  font-size: 75%;
-}
-
-
-/* Better tables */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: auto;
-  max-width: 100%;
-  border-top: 2.27px solid black;
-  border-bottom: 2.27px solid black;
-  /* display: block; */
-  overflow-x: auto; /* does not work because element is not block */
-  /* white-space: nowrap; */
-  counter-increment: caption;
-}
-/* add bottom border on column table headings  */
-table tr > th[scope='col'] {
-  border-bottom: 1.36px solid black;
-}
-/* add right border on row table headings  */
-table tr > th[scope='row'] {
-  border-right: 1.36px solid black;
-}
-table > tbody > tr:first-child > td,
-table > tbody > tr:first-child > th {
-  border-top: 1.36px solid black;
-}
-table > tbody > tr:last-child > td,
-table > tbody > tr:last-child > th {
-  border-bottom: 1.36px solid black;
-}
-
-
-th,
-td {
-  text-align: left;
-  padding: 0.5rem;
-  line-height: 1.1;
-}
-
-
-/* Table caption */
-caption {
-  text-align: left;
-  font-size: 0.923em;
-  /* border-bottom: 2pt solid #000; */
-  padding: 0 0.25em 0.25em;
-  width: 100%;
-  margin-left: 0;
-}
-
-caption::before {
-  content: 'Table ' counter(caption) '. ';
-  font-weight: bold;
-}
-
-
-/* allow scroll on the x-axis */
-.scroll-wrapper {
-  overflow-x: auto;
-}
-
-/* if a table is wrapped in a scroll wrapper,
-  the table cells shouldn't wrap */
-.scroll-wrapper > table td {
-  white-space: nowrap;
-}
-
-
-
-/* Center align the title */
-h1:first-child {
-  text-align: center;
 }
